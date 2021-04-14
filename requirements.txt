@@ -1,0 +1,9 @@
+Django==3.1.5
+django-redis==4.12.1
+django-simpleui==2021.4.1
+djangorestframework==3.12.2
+djangorestframework-jwt==1.11.0
+PyJWT==1.7.1
+PyMySQL==1.0.2
+redis==3.5.3
+Pillow==8.2.0

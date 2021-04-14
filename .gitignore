@@ -1,0 +1,15 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# If you are using PyCharm #
+.idea/
+
+__pycache__
+polaris_admin/db.sqlite3
+
+migrations/
