@@ -1,4 +1,4 @@
-"""polaris_admin URL Configuration
+"""drf_admin URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/3.1/topics/http/urls/
@@ -24,6 +24,8 @@ urlpatterns = [
     # 项目模块
     path(f'{base_api}oauth/', include('oauth.urls')),  # 用户鉴权模块
     path(f'{base_api}system/', include('system.urls')),  # 系统管理模块
+    path(f'{base_api}ldap/', include('ldapManagment.urls')),  # 系统管理模块
+    path(f'{base_api}information/', include('information.urls')),  # 系统管理模块
 ]
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

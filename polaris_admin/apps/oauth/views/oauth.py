@@ -26,14 +26,13 @@ class UserLoginView(ObtainJSONWebToken):
         if response.status_code == 200:
             conn = get_redis_connection('user_info')
             conn.incr('visits')
-            response.data['res_code'] = '10000'
-            return JsonResponse(data=response.data,status=status.HTTP_200_OK)
+            return  response
         else:
             if response.data.get('non_field_errors'):
                 if isinstance(response.data.get('non_field_errors'), list) and len(
                         response.data.get('non_field_errors')) > 0:
                     if response.data.get('non_field_errors')[0].strip() == '无法使用提供的认证信息登录。':
-                        return Response(data={'data': '用户名或密码错误','res_code':'10001'}, status=status.HTTP_400_BAD_REQUEST)
+                        return Response(data={'data': '用户名或密码错误'}, status=status.HTTP_400_BAD_REQUEST)
             raise ValidationError(response.data)
 
 
