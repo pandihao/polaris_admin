@@ -1,8 +1,8 @@
 from rest_framework import serializers
 
 from system.models import Permissions
-from drf_admin.utils.views import  TreeSerializer
-from drf_admin.common.models import get_child_ids
+from polaris_admin.utils.views import  TreeSerializer
+from polaris_admin.common.models import get_child_ids
 
 class PermissionsSerializer(serializers.ModelSerializer):
     """

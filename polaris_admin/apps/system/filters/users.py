@@ -2,7 +2,7 @@ import django_filters
 import django_filters
 from django.contrib.auth import get_user_model
 
-from drf_admin.common.models import get_child_ids
+from polaris_admin.common.models import get_child_ids
 from system.models import Departments
 
 Users = get_user_model()

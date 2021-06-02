@@ -9,7 +9,7 @@
 from rest_framework.filters import SearchFilter, OrderingFilter
 from rest_framework.viewsets import ModelViewSet
 
-from drf_admin.utils.views import TreeAPIView,ChoiceAPIView
+from polaris_admin.utils.views import TreeAPIView,ChoiceAPIView
 from system.models import Permissions
 from system.serializers.permissions import PermissionsSerializer,PermissionsTreeSerializer
 from rest_framework.decorators import action

@@ -1,6 +1,6 @@
 
 from rest_framework.filters import SearchFilter, OrderingFilter
-from drf_admin.utils.views import TreeAPIView
+from polaris_admin.utils.views import TreeAPIView
 from rest_framework.viewsets import ModelViewSet
 from system.models import Departments
 from system.serializers.departments import DepartmentsSerializer ,DepartmentsTreeSerializer

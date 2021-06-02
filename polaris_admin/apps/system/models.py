@@ -1,6 +1,6 @@
 from django.db import models
 
-from drf_admin.utils.models import BaseModel
+from polaris_admin.utils.models import BaseModel
 
 
 class Permissions(BaseModel):
